@@ -53,7 +53,8 @@ This application provides REST APIs to manage employees using CouchDB. It suppor
 2. Enable "Less Secure Apps" OR create an App Password.
 3. Add the following to `application.properties`:
 ```json
-spring.mail.host=smtp.gmail.com spring.mail.port=587
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
 spring.mail.username=yournewemail@gmail.com
 spring.mail.password=yourAppPassword
 spring.mail.properties.mail.smtp.auth=true
