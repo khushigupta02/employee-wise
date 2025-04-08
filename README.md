@@ -26,11 +26,12 @@ This application provides REST APIs to manage employees using CouchDB. It suppor
    - Unzip the project archive (`EmployeeApp.zip` or `.rar`)
    - Open the project in your favorite IDE (IntelliJ, VS Code, Eclipse)
    - Configure the CouchDB properties in `application.properties`:
-   - spring.couchdb.url=http://localhost:5984/
-   - spring.couchdb.username=admin
-   - spring.couchdb.password=12345
-   - spring.couchdb.database=employees
-
+    ```json
+     spring.couchdb.url=http://localhost:5984/
+     spring.couchdb.username=admin
+     spring.couchdb.password=12345
+     spring.couchdb.database=employees
+    ```
 
 3. 📦 BUILD PROJECT:
    - Open terminal and run:
@@ -51,12 +52,13 @@ This application provides REST APIs to manage employees using CouchDB. It suppor
 1. Create a new Gmail account.
 2. Enable "Less Secure Apps" OR create an App Password.
 3. Add the following to `application.properties`:
-- spring.mail.host=smtp.gmail.com spring.mail.port=587
-- spring.mail.username=yournewemail@gmail.com
-- spring.mail.password=yourAppPassword
-- spring.mail.properties.mail.smtp.auth=true
-- spring.mail.properties.mail.smtp.starttls.enable=true
-
+```json
+spring.mail.host=smtp.gmail.com spring.mail.port=587
+spring.mail.username=yournewemail@gmail.com
+spring.mail.password=yourAppPassword
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+```
 
 ----------------------------------------------------------
 📌 API DOCUMENTATION
