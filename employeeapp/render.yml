@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: spring-boot-app
-    env: java
-    plan: free
-    buildCommand: ./mvnw clean install
-    startCommand: java -jar target/*.jar
-    repo: https://github.com/khushigupta02/employee-wise
-    branch: master
