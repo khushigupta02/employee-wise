@@ -27,10 +27,10 @@ This application provides REST APIs to manage employees using CouchDB. It suppor
    - Open the project in your favorite IDE (IntelliJ, VS Code, Eclipse)
    - Configure the CouchDB properties in `application.properties`:
     ```json
-     spring.couchdb.url=http://localhost:5984/
-     spring.couchdb.username=admin
-     spring.couchdb.password=12345
-     spring.couchdb.database=employees
+   spring.couchdb.url=http://localhost:5984/
+   spring.couchdb.username=admin
+   spring.couchdb.password=12345
+   spring.couchdb.database=employees
     ```
 
 3. 📦 BUILD PROJECT:
@@ -79,7 +79,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
   "email": "john.doe@example.com",
   "reportsTo": "manager-uuid",
   "profileImage": "https://example.com/image.jpg"
-}''
+}
 
 ```
 ----------------------------------
@@ -160,9 +160,8 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 ----------------------------------
 - When a new employee is added, an email is sent to their Level 1 Manager:
 ```json
-- Subject: New Employee Added
-Body:
-"John Doe will now work under you. Mobile number is 9876543210 and email is john.doe@example.com."
+Subject: New Employee Added
+Body: "John Doe will now work under you. Mobile number is 9876543210 and email is john.doe@example.com."
 ```
 
 📂 Files Included in ZIP:
