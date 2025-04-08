@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "e7cf06ce-eaee-4849-8a4a-15019d5c4f09",
+		"name": "EmployeeWise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22104888"
+	},
+	"item": [
+		{
+			"name": "getEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee-manager",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeName\": \"Khushi\",\r\n    \"email\": \"khushiguptakhushi02@gmail.com\",\r\n    \"phoneNumber\": \"9876543210\",\r\n    \"reportsTo\": null\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee-ExceptionHandling",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"employeeName\": \"K\",         // too short\r\n  \"email\": \"khushi.com\",       // invalid email\r\n  \"phoneNumber\": \"123\",        // too short\r\n  \"reportsTo\": \"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee-B",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeName\": \"Bsb\",\r\n    \"email\": \"b@example.com\",\r\n    \"phoneNumber\": \"9876543210\",\r\n    \"reportsTo\": \"b69165e3-4bb0-4c77-9f54-27e4f922f233\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addEmployee-C",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"employeeName\": \"Cc\",\r\n  \"phoneNumber\": \"9876543210\",\r\n  \"email\": \"c@example.com\",\r\n  \"reportsTo\": \"4ccb5f10-6a64-4a59-8300-0825f9813146\", \r\n  \"profileImage\": \"https://randomuser.me/api/portraits/women/1.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/delete/8de16956-0df2-429a-be56-420191a813e6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"delete",
+						"8de16956-0df2-429a-be56-420191a813e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"employeeName\": \"B777\",\r\n  \"email\": \"khushiguptakhushi02@gmail.com\",\r\n  \"phoneNumber\": \"9876543210\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/update/8de16956-0df2-429a-be56-420191a813e6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"update",
+						"8de16956-0df2-429a-be56-420191a813e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getNthLevel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/498979ce-43c5-49f7-a4d6-76395e9b197e/manager/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"498979ce-43c5-49f7-a4d6-76395e9b197e",
+						"manager",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPagination",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"page\": 0,\r\n  \"size\": 1,\r\n  \"sortBy\": \"email\",\r\n  \"sortOrder\": \"asc\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees/getPagination",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"getPagination"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
