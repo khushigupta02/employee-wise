@@ -16,7 +16,7 @@ public class EmailService {
         String body = employeeName + " will now work under you. Mobile number is " + phone + " and email is " + email;
 
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("youremail@gmail.com");
+        message.setFrom("khushi.codes04@gmail.com");
         message.setTo(toEmail);
         message.setSubject(subject);
         message.setText(body);
